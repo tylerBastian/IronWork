@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "883213991433",
+    "project_id": "ironwork-308f0",
+    "storage_bucket": "ironwork-308f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883213991433:android:2f6adc0feb394bc4cf02d8",
+        "android_client_info": {
+          "package_name": "com.cmpsc475.ironwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883213991433-2rv4fdd4bbsmgtlgqdh9nggtq9d753to.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMgLLiflln5FKfBfn37OgDl-TLAllfyzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883213991433-2rv4fdd4bbsmgtlgqdh9nggtq9d753to.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

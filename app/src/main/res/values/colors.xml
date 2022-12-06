@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BC0000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#002AC1</color>
+    <color name="background">#222222</color>
+    <color name="textColorWhite">#EFEFEF</color>
+    <color name="bottomNavBackground">#0E0E0E</color>
+    <color name="listCardBackground">#1E1E1E</color>
+    <color name="links">#8AB1FF</color>
+</resources>

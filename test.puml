@@ -1,0 +1,197 @@
+@startuml
+abstract class com.cmpsc475.ironwork.AppDatabase {
+- {static} AppDatabase INSTANCE
+- {static} Object sLock
++ {abstract}JobDao JobDao()
++ {static} AppDatabase getInstance(Context)
+}
+interface com.cmpsc475.ironwork.JobDao {
+~ Job findByTitle(String)
+~ void save(Job)
+~ void insertAll(Job)
+~ void delete(Job)
+~ List<Job> getAllJobs()
+}
+class com.cmpsc475.ironwork.SearchFragment {
+- {static} String ARG_PARAM1
+- {static} String ARG_PARAM2
+- String mParam1
+- String mParam2
+- RecyclerView mRecyclerView
+- List<Object> viewItems
+- List<Job> jobs
+- RecyclerView.Adapter mAdapter
+- RecyclerView.LayoutManager layoutManager
+- TextView locationTextView
+~ LocationManager lm
+- Location gps_loc
+- Location network_loc
+- Location final_loc
+- double longitude
+- double latitude
+- String userCountry
++ {static} SearchFragment newInstance(String,String)
++ void onCreate(Bundle)
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
+- void addJobsFromDatabase()
+- void getUserLocation()
+}
+class com.cmpsc475.ironwork.HomeFragment {
+- {static} String ARG_PARAM1
+- {static} String ARG_PARAM2
+- TextView home_content
+- String mParam1
+- String mParam2
++ {static} HomeFragment newInstance(String,String)
++ void onCreate(Bundle)
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
+- void sendToLoginActivity()
++ void onSaveInstanceState(Bundle)
+}
+class com.cmpsc475.ironwork.RegisterActivity {
+~ EditText userName
+~ TextView AccountExists
+~ Button register
+- FirebaseAuth mAuth
+- ProgressDialog loadingBar
+# void onCreate(Bundle)
+- void createNewAccount()
+- void sendUserToLoginActivity()
+}
+class com.cmpsc475.ironwork.ProfileFragment {
+- {static} String ARG_PARAM1
+- {static} String ARG_PARAM2
+- Location gps_loc
+- Location network_loc
+- Location final_loc
+- double longitude
+- double latitude
+- String userCountry
+- EditText editName
+- TextView result
+- Button buttonSubmit
+- String mParam1
+- String mParam2
++ {static} ProfileFragment newInstance(String,String)
++ void onCreate(Bundle)
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
+}
+class com.cmpsc475.ironwork.LoginActivity {
+~ EditText userName
+~ Button login
+~ TextView register
+~ FirebaseUser currentUser
+~ FirebaseAuth mAuth
+~ ProgressDialog loadingBar
+- SignInClient oneTapClient
+- BeginSignInRequest signInRequest
+- {static} int REQ_ONE_TAP
+- boolean showOneTapUI
+- {static} String TAG
+- {static} int RC_SIGN_IN
+- GoogleSignInClient mGoogleSignInClient
+# void onCreate(Bundle)
++ void onActivityResult(int,int,Intent)
+- void firebaseAuthWithGoogle(String)
+- void signIn()
+- void updateUI(FirebaseUser)
+- void resetPasswordUser()
+- void sendUserToRegister()
+- void AllowUserToLogin()
+# void onStart()
+- void sendToMainActivity()
+}
+class com.cmpsc475.ironwork.JobViewModel {
+- JobDao jobDao
+- ExecutorService executorService
+- List<Job> allJobs
++ List<Job> getAllJobs()
+~ void insert(Job)
+~ void saveJob(Job)
+~ void deleteJob(Job)
++ void insertAll(Job)
+}
+class com.cmpsc475.ironwork.MainActivity {
+~ FirebaseUser currentUser
+~ FirebaseAuth mAuth
+~ Button logout
+- Toolbar myToolbar
+- DrawerLayout myDrawerLayout
+- BottomNavigationView bottomNavigationView
+- JSONObject json
+~ HomeFragment homeFragment
+~ SearchFragment searchFragment
+~ ProfileFragment profileFragment
+~ AppDatabase db
+~ JobDao jobDao
+~ {static} JobViewModel jobViewModel
+# void onCreate(Bundle)
++ {static} JobViewModel getJobViewModel()
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
+# void onStart()
+- void sendToLoginActivity()
++ String loadJSONFromAsset()
+- void initJobViewModel()
+}
+class com.cmpsc475.ironwork.JobListAdapter {
+- {static} int TYPE
+- Context context
+- List<Object> listRecyclerItem
+- List<Job> jobs
++ RecyclerView.ViewHolder onCreateViewHolder(ViewGroup,int)
++ void onBindViewHolder(RecyclerView.ViewHolder,int)
++ void setJobs(List<Job>)
++ int getItemCount()
+}
+class com.cmpsc475.ironwork.JobListAdapter.ItemViewHolder {
+- TextView jobID
+- TextView jobTitle
+- TextView jobDescription
+- TextView jobLocation
+- TextView jobPay
+- TextView jobDate
+- TextView jobTime
+- TextView jobDuration
+- TextView jobContact
+- TextView jobContactPhone
+- TextView jobContactEmail
+}
+class com.cmpsc475.ironwork.Job {
+- int jobID
+- String jobTitle
+- String jobDescription
+- String jobLocation
+- String jobPay
+- String jobDate
+- String jobTime
+- String jobDuration
+- String jobContact
+- String jobContactPhone
+- String jobContactEmail
++ int getJobID()
++ String getJobTitle()
++ String getJobDescription()
++ String getJobLocation()
++ String getJobPay()
++ String getJobDate()
++ String getJobTime()
++ String getJobDuration()
++ String getJobContact()
++ String getJobContactPhone()
++ String getJobContactEmail()
+}
+
+
+androidx.room.RoomDatabase <|-- com.cmpsc475.ironwork.AppDatabase
+androidx.fragment.app.Fragment <|-- com.cmpsc475.ironwork.SearchFragment
+androidx.fragment.app.Fragment <|-- com.cmpsc475.ironwork.HomeFragment
+androidx.appcompat.app.AppCompatActivity <|-- com.cmpsc475.ironwork.RegisterActivity
+androidx.fragment.app.Fragment <|-- com.cmpsc475.ironwork.ProfileFragment
+androidx.appcompat.app.AppCompatActivity <|-- com.cmpsc475.ironwork.LoginActivity
+androidx.lifecycle.AndroidViewModel <|-- com.cmpsc475.ironwork.JobViewModel
+androidx.appcompat.app.AppCompatActivity <|-- com.cmpsc475.ironwork.MainActivity
+com.cmpsc475.ironwork.Adapter <|-- com.cmpsc475.ironwork.JobListAdapter
+com.cmpsc475.ironwork.JobListAdapter +.. com.cmpsc475.ironwork.JobListAdapter.ItemViewHolder
+com.cmpsc475.ironwork.ViewHolder <|-- com.cmpsc475.ironwork.JobListAdapter.ItemViewHolder
+@enduml

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Iron Work</string>
+    <string name="createAcc">Create Account</string>
+    <string name="password">Password</string>
+    <string name="submit">SUBMIT</string>
+    <string name="haveAcc">Have an account? Click to login</string>
+    <string name="email">Email</string>
+    <string name="home_page">Placeholder After Login</string>
+    <string name="logout">LOGOUT</string>
+    <string name="login">LOGIN</string>
+    <string name="noAccount">No Account? Click to create one</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_frag_placeholder">Home Fragment</string>
+    <string name="search_frag_placeholder">Search Fragment</string>
+    <string name="profile_frag_placeholder">Profile Fragment</string>
+    <string name="navigation_drawer_open">test</string>
+    <string name="navigation_drawer_close">test2</string>
+    <string name="home_content">\t\t\tThe International Association of Bridge, Structural, Ornamental and Reinforcing Iron Workers Union, AFL-CIO (IW), is a proud trade association whose beginnings go back to the 1890s. The IW represents 120,000 members in North America. Members of our union have worked on nearly every major construction project you can think of - the Golden Gate Bridge, the Sears Tower, the St. Louis Arch, the Oil Sands Plant Expansion in Alberta, the World Trade Center and Freedom Tower. We represent ironworkers who work on bridges, structural steel, ornamental, architectural, and miscellaneous metals, rebar and in shops. Across North America, we build.\n\n\t\t\t
+
+And we build safely and skillfully, getting the job done right and on time.
+
+\n\n\t\t\tWe provide many benefits and support for our members. These benefits include the advantage of working under a collective bargaining agreement that brings bigger paychecks, better health and retirement benefits, more secure jobs and safe working conditions.
+
+Explore our site and find out how ironworkers are building the infrastructure of North America!
+    \n\n\t\t\tIn the late 1880s, steel had virtually replaced wood and stone as the primary load-carrying material in the erection of bridges and buildings. This abrupt change in structural materials brought about a demand for a new type of worker-bridgemen and architectural ironworkers. Ironworkers became known as "cowboys in the sky." As these daring, young, independent men aged and became husbands and providers, their thoughts turned to providing for their families during sickness, injury and death and the realization by joining together, their voices became stonger, unified and heard. Thus, the International Association of Bridge and Structural Iron Workers of America was established on February 4, 1896 by 16 delegates who attended our founding convention in Pittsburgh.</string>
+</resources>

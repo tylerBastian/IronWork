@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/listCardBackground"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:strokeColor="@color/textColorWhite"
+    app:strokeWidth=".5dp"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/row1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="Job ID: "
+                android:textColor="@color/textColorWhite"
+                android:gravity="left">
+            </TextView>
+
+            <TextView
+                android:id="@+id/job_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/textColorWhite" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/row2"
+                android:layout_width="62dp"
+                android:layout_height="match_parent"
+                android:text="Position: "
+                android:textColor="@color/textColorWhite"
+                android:gravity="left">
+            </TextView>
+            <TextView
+                android:id="@+id/job_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/textColorWhite"
+                android:gravity="left"
+                />
+
+        </TableRow>
+
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/row3"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:text="Description: "
+                android:textColor="@color/textColorWhite"
+                android:gravity="left">
+            </TextView>
+            <TextView
+                android:id="@+id/job_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/textColorWhite"
+                android:gravity="left"
+                />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/row4"
+                android:layout_width="69dp"
+                android:layout_height="match_parent"
+                android:text="Location: "
+                android:textColor="@color/textColorWhite"
+                android:gravity="left">
+            </TextView>
+
+            <TextView
+                android:id="@+id/job_location"
+                android:autoLink="web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColorLink="@color/textColorWhite"
+                android:gravity="left"
+                />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/row5"
+                android:layout_width="67dp"
+                android:layout_height="match_parent"
+                android:text="Pay Rate: "
+                android:textColor="@color/textColorWhite"
+                android:gravity="left">
+            </TextView>
+
+            <TextView
+                android:id="@+id/job_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/textColorWhite"
+                android:gravity="left"
+                />
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/row6"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:text="Start Date: "
+                android:textColor="@color/textColorWhite"
+                android:gravity="left">
+            </TextView>
+
+            <TextView
+                android:id="@+id/job_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/textColorWhite"
+                android:gravity="left"
+                />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/row7"
+                android:layout_width="49dp"
+                android:layout_height="match_parent"
+                android:text="Hours: "
+                android:textColor="@color/textColorWhite"
+                android:gravity="left">
+            </TextView>
+
+            <TextView
+                android:id="@+id/job_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/textColorWhite"
+                android:gravity="left"
+                />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/row8"
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:text="Est. Duration: "
+                android:textColor="@color/textColorWhite"
+                android:gravity="left">
+            </TextView>
+
+            <TextView
+                android:id="@+id/job_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/textColorWhite"
+                android:gravity="left"
+                />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/row9"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Contact Name: "
+                android:textColor="@color/textColorWhite"
+                android:gravity="left">
+            </TextView>
+            <TextView
+                android:id="@+id/job_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/textColorWhite"
+                android:gravity="left"
+                />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/row10"
+                android:layout_width="74dp"
+                android:layout_height="match_parent"
+                android:text="Contact #: "
+                android:textColor="@color/textColorWhite"
+                android:gravity="left">
+            </TextView>
+
+            <TextView
+                android:id="@+id/job_contact_phone"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/textColorWhite" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/row11"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textColor="@color/textColorWhite"
+                android:gravity="left">
+            </TextView>
+            <TextView
+                android:id="@+id/job_contact_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/textColorWhite"
+                android:autoLink="email"
+                android:textColorLink="@color/links"
+                android:gravity="left"
+                />
+            <Button
+                android:id="@+id/interested_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interested"
+                android:layout_gravity="right"
+                android:textColor="@color/textColorWhite"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="5dp"
+                android:onClick="sendInterestedEmail"
+                >
+            </Button>
+
+        </TableRow>
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

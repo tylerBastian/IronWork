@@ -1,0 +1,54 @@
+[
+  {
+    "jobID": 1,
+    "jobTitle": "Reinforcing Ironworker",
+    "jobDescription": "Bayfront Convention Center - Base job",
+    "jobLocation": "https://goo.gl/maps/p59TFgMtDESxr6gM9",
+    "jobPay": "$35/hr",
+    "jobDate": "December 1, 2022",
+    "jobTime": "8:00am - 5:00pm",
+    "jobDuration": "~8 weeks",
+    "jobContact": "John Doe",
+    "jobContactPhone": "555-555-5555",
+    "jobContactEmail": "email@email.com"
+  },
+  {
+    "jobID": 2,
+    "jobTitle": "Structural Steel Erector",
+    "jobDescription": "Hilton Hotel - Base job",
+    "jobLocation": "https://goo.gl/maps/p59TFgMtDESxr6gM9",
+    "jobPay": "$38/hr",
+    "jobDate": "December 25, 2022",
+    "jobTime": "8:00am - 5:00pm",
+    "jobDuration": "~12 weeks",
+    "jobContact": "Johnny Doey",
+    "jobContactPhone": "555-555-1111",
+    "jobContactEmail": "placeholdemail@anemail.com"
+  },
+  {
+    "jobID": 3,
+    "jobTitle": "Rigging Foreman",
+    "jobDescription": "Penn State Behrend - Base job",
+    "jobLocation": "https://goo.gl/maps/p59TFgMtDESxr6gM9",
+    "jobPay": "$45/hr",
+    "jobDate": "January 1, 2023",
+    "jobTime": "8:00am - 5:00pm",
+    "jobDuration": "~8 weeks",
+    "jobContact": "Johnathan Doethan",
+    "jobContactPhone": "555-555-2222",
+    "jobContactEmail": "justanemail123@email.com"
+  },
+  {
+      "jobID": 4,
+      "jobTitle": "Welding Foreman",
+      "jobDescription": "Eastside YMCA - Base job",
+      "jobLocation": "https://goo.gl/maps/p59TFgMtDESxr6gM9",
+      "jobPay": "$51/hr",
+      "jobDate": "January 25, 2023",
+      "jobTime": "8:00am - 7:00pm",
+      "jobDuration": "~16 weeks",
+      "jobContact": "Not John",
+      "jobContactPhone": "555-555-3333",
+      "jobContactEmail": "lastemail@gmail.com"
+  }
+]
